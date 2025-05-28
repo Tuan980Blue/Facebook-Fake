@@ -43,6 +43,7 @@ export default function Login() {
       }
     } catch (err) {
       setError('Có lỗi xảy ra khi đăng nhập');
+      console.log(err);
     } finally {
       setLoading(false);
     }

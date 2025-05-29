@@ -1,3 +1,38 @@
-# Ignore all files in generated directory
-src/generated/**/*
-**/generated/**/* 
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Next.js
+.next/
+out/
+
+# Production
+build
+dist
+
+# Generated files
+**/generated
+**/prisma/generated
+**/prisma/client.js
+**/prisma/edge.js
+**/prisma/default.js
+src/generated
+src/generated/**
+**/generated/**
+**/prisma/generated/**
+**/prisma/client.js
+**/prisma/edge.js
+**/prisma/default.js
+
+# Misc
+.DS_Store
+*.pem
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.eslintcache 

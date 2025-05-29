@@ -1,0 +1,14 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-unused-expressions": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/generated/**/*.ts", "**/generated/**/*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-expressions": "off"
+      }
+    }
+  ]
+} 

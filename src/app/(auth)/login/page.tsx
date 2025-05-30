@@ -37,7 +37,8 @@ export default function Login() {
 
             if (result.success) {
                 // Đăng nhập thành công, chuyển hướng về trang chủ
-                router.push('/');
+                // router.push('/home');
+                setError("Mật khẩu hoặc Email (số điện thoại) không chính xác.")
             } else {
                 setError(result.message);
             }
@@ -126,31 +127,28 @@ export default function Login() {
                             >
                                 {loading ? 'Đang đăng nhập...' : 'Đăng nhập'}
                             </button>
-                            {/*sau khi loading xong thì hiện lên*/}
                             <div>
-                                {!loading && (
-                                    <div className="text-red-500 text-sm text-center mb-2">
-                                        {error ? (
-                                            <>
-                                                <div>Mật khẩu bạn nhập không chính xác.</div>
-                                                <Link
-                                                    href="/forgot-password"
-                                                    className="font-semibold underline ml-1 text-red-600 hover:text-red-700"
-                                                    style={{display: "inline"}}
-                                                >
-                                                    Bạn quên mật khẩu?
-                                                </Link>
-                                            </>
-                                        ) : (
+                                <div className="text-red-500 text-sm text-center mb-2">
+                                    {error ? (
+                                        <>
+                                            <div>Mật khẩu hoặc Email (số điện thoại) không chính xác.</div>
                                             <Link
                                                 href="/forgot-password"
-                                                className="text-[#1877f2] text-center text-sm mt-2 hover:underline"
+                                                className="font-semibold underline ml-1 text-red-600 hover:text-red-700"
+                                                style={{display: "inline"}}
                                             >
-                                                Quên mật khẩu?
+                                                Bạn quên mật khẩu?
                                             </Link>
-                                        )}
-                                    </div>
-                                )}
+                                        </>
+                                    ) : (
+                                        <Link
+                                            href="/forgot-password"
+                                            className="text-[#1877f2] text-center md:text-sm text-xs mt-2 hover:underline"
+                                        >
+                                            Quên mật khẩu?
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                             <div className="border-t border-[#dadde1] my-3"></div>
                             <Link

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Facebook",
-  description: "Mạng xã hội facebook",
+  description: "Hãy đăng nhập Facebook để bắt đầu chia sẻ và kết nối với bạn bè, gia đình và những người bạn biết.",
 };
 
 export default function RootLayout({

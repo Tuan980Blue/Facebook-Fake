@@ -4,7 +4,7 @@
 
 # 📘 Facebook Fake
 
-Một bản sao mô phỏng giao diện và chức năng cơ bản của Facebook – xây dựng nhằm mục đích học tập, thực hành và khám phá cách các mạng xã hội hoạt động ở cấp độ front-end/back-end.
+Một bản sao mô phỏng giao diện Auth của Facebook – xây dựng nhằm mục đích học tập, thực hành và khám phá cách các mạng xã hội hoạt động ở cấp độ front-end/back-end.
 
 ## 🚀 Tính năng chính
 
